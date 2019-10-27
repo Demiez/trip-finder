@@ -1,0 +1,18 @@
+@import '../../assets/styles/variables';
+
+.footer {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  width: 100%;
+  min-height: $header-footer-min-height;
+  background: $header-footer-background;
+  font-weight: bold;
+
+  .footer__link {
+    margin-left: 30px;
+    i:hover {
+      color: $default-white;
+    }
+  }
+}
