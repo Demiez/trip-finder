@@ -21,5 +21,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'max-len': ["error", { "code": 140 }], // Sets max-len
+    'react/prop-types': 0, // Allows not using typechecking via proptypes.
   },
 };

@@ -24,13 +24,18 @@ html {
 
 body * {
   box-sizing: border-box;
-  font-family: Arial sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  color: #000;
+  font-family: $basic-font-family;
+  font-size: $basic-font-size;
+  letter-spacing: $basic-letter-spacing;
+  color: $basic-font-color;
 }
 
 img {
   max-width: $absolute-width;
   width: auto;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: $margin-center;
 }
