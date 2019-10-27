@@ -23,5 +23,6 @@ module.exports = {
   rules: {
     'max-len': ["error", { "code": 140 }], // Sets max-len
     'react/prop-types': 0, // Allows not using typechecking via proptypes.
+    'linebreak-style': 0, // Disables checking for line-breaks
   },
 };
