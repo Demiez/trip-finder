@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/Banner';
 
 import './App.scss';
 
@@ -12,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Main>
-          <p>Hi</p>
+          <Banner />
         </Main>
         <Footer />
       </div>
