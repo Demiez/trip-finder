@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body * {
+body *:not(h1) {
   box-sizing: border-box;
   font-family: $basic-font-family;
   font-size: $basic-font-size;

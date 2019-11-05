@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/controllers';
+
+.banner {
+  padding: $standard-padding;
+
+  h1, p {
+    padding-bottom: 2rem;
+  }
+}

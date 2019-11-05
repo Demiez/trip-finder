@@ -1,0 +1,21 @@
+@import "../../assets/styles/variables";
+
+.submit-button {
+  font-family: $basic-font-family;
+  color: $basic-font-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 22.5rem;
+  min-height: 6.1rem;
+  padding: 0 3.5rem;
+  background-color: $header-footer-background;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    color: $default-white;
+    border-bottom: 1px solid black;
+  }
+}
