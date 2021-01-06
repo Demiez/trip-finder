@@ -1,0 +1,41 @@
+@import "../../assets/styles/variables";
+
+html,
+body,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body *:not(h1) {
+  box-sizing: border-box;
+  font-family: $basic-font-family;
+  font-size: $basic-font-size;
+  letter-spacing: $basic-letter-spacing;
+  color: $basic-font-color;
+}
+
+img {
+  max-width: $absolute-width;
+  width: auto;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: $margin-center;
+}

@@ -1,0 +1,102 @@
+@import '../../assets/styles/variables';
+
+.header {
+  width: 100%;
+  background-color: $header-footer-background;
+
+  &__upper-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .header__logo {
+      position: relative;
+      padding-right: $header-logo-padding;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .header__img {
+         height: $header-logo-height;
+       }
+
+      .header__title {
+        position: absolute;
+        top: $header-logo-title-top;
+        left: $header-logo-title-left;
+        font-size: $header-logo-font-size;
+        font-weight: bold;
+      }
+    }
+
+    .header__search {
+      position: relative;
+      display: flex;
+      & form {
+        display: inherit;
+        align-items: center;
+      }
+
+      .header__search-input {
+        width: 30rem;
+        padding: 0 3rem;
+        background: transparent;
+        border-bottom: 0.1rem solid $basic-font-color;
+        outline: none;
+
+        &::placeholder {
+          text-align: left;
+          color: $basic-font-color;
+          font-weight: normal;
+        }
+      }
+
+      .header__search-button {
+        position: absolute;
+        background: transparent;
+        top: -0.2rem;
+        right: 0;
+        outline: none;
+
+        .header__search-icon {
+          height: $header-icon-height;
+        }
+        
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .header__user-button {
+      height: 3rem;
+      background: transparent;
+      outline: none;
+      .header__user-icon {
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__navigation {
+    border-top: 0.1rem solid $default-white;
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+    }
+    .header__link {
+      padding: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      &:hover {
+        color: $default-white;
+      }
+    }
+  }
+}
